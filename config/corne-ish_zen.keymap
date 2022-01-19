@@ -14,6 +14,37 @@
 };
 
 / {
+        combos {
+                compatible = "zmk,combos";
+
+                combo_bspc {
+                        timeout-ms = <50>;
+                        key-positions = <15 20>;
+                        layers = <0>;
+                        bindings = <&kp BSPC>;
+                };
+                combo_ret {
+                        timeout-ms = <50>;
+                        key-positions = <16 19>;
+                        layers = <0>;
+                        bindings = <&kp RET>;
+                };
+                combo_ctrl {
+                        timeout-ms = <50>;
+                        key-positions = <13 22>;
+                        layers = <0>;
+                        bindings = <&sk LCTRL>;
+                };
+                combo_alt {
+                        timeout-ms = <50>;
+                        key-positions = <14 21>;
+                        layers = <0>;
+                        bindings = <&sk LALT>;
+                };
+        };
+};
+
+/ {
         conditional_layers {
                 compatible = "zmk,conditional-layers";
 
@@ -22,28 +53,9 @@
                         then-layer = <3>;
                 };
         };
-        combos {
-                compatible = "zmk,combos";
+};
 
-                combo_bspc {
-                        timeout-ms = <50>;
-                        key-positions = <15 20>; // D K
-                        layers = <0>;
-                        bindings = <&kp BSPC>;
-                };
-                combo_ret {
-                        timeout-ms = <50>;
-                        key-positions = <16 19>; // F J
-                        layers = <0>;
-                        bindings = <&kp RET>;
-                };
-                combo_ctrl {
-                        timeout-ms = <50>;
-                        key-positions = <13 22>; // A :
-                        layers = <0>;
-                        bindings = <&sk LCTRL>;
-                };
-        };
+/ {      
         keymap {
                 compatible = "zmk,keymap";
 
