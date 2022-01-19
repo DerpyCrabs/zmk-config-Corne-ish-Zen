@@ -43,12 +43,6 @@
                         layers = <0>;
                         bindings = <&sk LCTRL>;
                 };
-                combo_alt {
-                        timeout-ms = <50>;
-                        key-positions = <14 21>; // S L
-                        layers = <0>;
-                        bindings = <&sk LALT>;
-                };
         };
         keymap {
                 compatible = "zmk,keymap";
