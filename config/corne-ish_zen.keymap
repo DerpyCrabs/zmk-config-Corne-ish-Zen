@@ -27,13 +27,13 @@
 
                 combo_bspc {
                         timeout-ms = <50>;
-                        key-positions = <16 20>; // D K
+                        key-positions = <15 20>; // D K
                         layers = <0>;
                         bindings = <&kp BSPC>;
                 };
                 combo_ret {
                         timeout-ms = <50>;
-                        key-positions = <17 19>; // F J
+                        key-positions = <16 19>; // F J
                         layers = <0>;
                         bindings = <&kp RET>;
                 };
@@ -45,7 +45,7 @@
                 };
                 combo_alt {
                         timeout-ms = <50>;
-                        key-positions = <2 9>; // W O
+                        key-positions = <14 21>; // S L
                         layers = <0>;
                         bindings = <&sk LALT>;
                 };
